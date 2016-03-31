@@ -8,6 +8,12 @@ fis.hook('commonjs', {
 
 fis.match('{/modules/**.js,*.jsx}', {
   parser: fis.plugin('typescript'),
+  
+  // typescript 就是编译速度会很快，但是对一些 es7 的语法不支持，可以用 babel 来解决。用以下内容换掉 typescript 的parser配置就好了。
+  // parser: fis.plugin('babel-5.x', {
+  //     sourceMaps: true,
+  //     optional: ["es7.decorators", "es7.classProperties"]
+  // }),
   rExt: '.js'
 });
 
