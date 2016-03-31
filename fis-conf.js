@@ -11,7 +11,7 @@ fis.match('{/modules/**.js,*.jsx}', {
   rExt: '.js'
 });
 
-// 该用 npm 方案，而不是用 fis-components
+// 改用 npm 方案，而不是用 fis-components
 fis.unhook('components');
 fis.hook('node_modules');
 
