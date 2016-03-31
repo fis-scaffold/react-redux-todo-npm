@@ -3,6 +3,7 @@ import TodoItem from './TodoItem'
 import Footer from './Footer'
 import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../constants/TodoFilters'
 
+
 const TODO_FILTERS = {
     [SHOW_ALL]: () => true,
     [SHOW_ACTIVE]: todo => !todo.completed,
@@ -66,14 +67,14 @@ class MainSection extends Component {
 
         return (
             <section className="main">
-        {this.renderToggleAll(completedCount) }
-        <ul className="todo-list">
-          {filteredTodos.map(todo =>
-              <TodoItem key={todo.id} todo={todo} {...actions} />
-          ) }
-            </ul>
-        {this.renderFooter(completedCount) }
-                </section>
+                {this.renderToggleAll(completedCount) }
+                <ul className="todo-list">
+                  {filteredTodos.map(todo =>
+                      <TodoItem key={todo.id} todo={todo} {...actions} />
+                  ) }
+                    </ul>
+                {this.renderFooter(completedCount) }
+            </section>
         )
     }
 }

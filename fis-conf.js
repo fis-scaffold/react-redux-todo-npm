@@ -3,10 +3,10 @@ fis.set('project.files', '/index.html'); // 按需编译。
 // 采用 commonjs 模块化方案。
 fis.hook('commonjs', {
   baseUrl: './modules',
-  extList: ['.js', '.ts', '.tsx']
+  extList: ['.js', '.jsx']
 });
 
-fis.match('*.{ts,tsx}', {
+fis.match('{/modules/**.js,*.jsx}', {
   parser: fis.plugin('typescript'),
   rExt: '.js'
 });
@@ -16,7 +16,7 @@ fis.unhook('components');
 fis.hook('node_modules');
 
 // 设置成是模块化 js
-fis.match('/{node_modules,modules}/**.{js,ts,tsx}', {
+fis.match('/{node_modules,modules}/**.{js,jsx}', {
   isMod: true
 });
 
@@ -33,7 +33,7 @@ fis.match('::package', {
 fis.media('production')
 
   // 对 js 做 uglify 压缩。
-  .match('*.{js,ts,tsx}', {
+  .match('*.{js,jsx}', {
     optimizer: fis.plugin('uglify-js')
   })
 
@@ -42,8 +42,8 @@ fis.media('production')
     // 更多用法请参考： https://github.com/fex-team/fis3-packager-deps-pack
     packager: fis.plugin('deps-pack', {
       'pkg/index.js': /*当有多条时，请用数组*/[
-        'modules/index.tsx',
-        'modules/index.tsx:deps', // 以及其所有依赖
+        'modules/index.jsx',
+        'modules/index.jsx:deps', // 以及其所有依赖
       ]
     })
   })
