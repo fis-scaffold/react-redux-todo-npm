@@ -12,7 +12,7 @@
   "devDependencies": {
     "fis3-hook-commonjs": "^0.1.3",
     "fis3-packager-deps-pack": "^0.0.1",
-    "fis3-parser-typescript": "^0.1.4",
+    "fis3-parser-typescript": "^0.2.3",
     "fis3-postpackager-loader": "^1.3.6",
     "fis3-hook-node_modules": "^2.0.8"
   },
