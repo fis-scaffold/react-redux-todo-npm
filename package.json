@@ -10,7 +10,7 @@
     "redux": "^3.3.1"
   },
   "devDependencies": {
-    "fis3-hook-commonjs": "^0.1.23",
+    "fis3-hook-commonjs": "^0.1.24",
     "fis3-packager-deps-pack": "^0.1.2",
     "fis-parser-babel-5.x": "^1.4.0",
     "fis3-postpackager-loader": "^2.0.4",
