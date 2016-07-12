@@ -13,7 +13,7 @@
     "fis3-hook-commonjs": "^0.1.25",
     "fis3-packager-deps-pack": "^0.1.2",
     "fis-parser-babel-5.x": "^1.4.0",
-    "fis3-postpackager-loader": "^2.0.4",
+    "fis3-postpackager-loader": "^2.0.5",
     "fis3-hook-node_modules": "^2.2.7"
   },
   "scripts": {
