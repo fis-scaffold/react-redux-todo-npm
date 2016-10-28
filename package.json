@@ -7,7 +7,7 @@
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-redux": "^4.4.1",
-    "redux": "^3.3.1"
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "fis-parser-babel-5.x": "^1.4.0",
