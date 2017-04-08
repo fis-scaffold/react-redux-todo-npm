@@ -4,7 +4,7 @@
   "description": "react + redux 的 todo demo. 供学习参考。",
   "dependencies": {
     "classnames": "^2.2.3",
-    "react": "^15.2.1",
+    "react": "^15.5.2",
     "react-dom": "^15.2.1",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1"
